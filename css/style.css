@@ -1,0 +1,10 @@
+/*header*/
+.page-header {
+
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+  
+}
