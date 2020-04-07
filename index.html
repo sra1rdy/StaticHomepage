@@ -10,17 +10,20 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <!-- <script src="https://kit.fontawesome.com/b99e675b6e.js"></script> -->
 </head>
 <body>
     <!--Header-->
     <!--make consistent class names-->
-    
+   <div class="container">
+
+   
     <header class="page-header">
-        <div>
+        <a href="#">
             <h1 class="header_text">Sternschnuppe</h1>
             <p class="header_subtext">kindertagespflege in Osterholz-scharmbeck</p>
-        </div>
+        </a>
         <a href="index.html" class="stern-logo"><img src="/images/Logo.gif" alt="logo" width="250" height="150">  </a>
    
 <!--logo-->
@@ -34,18 +37,19 @@
             <li>
                 <a href="#ueberuns">über uns<span><i class="fa fa-caret-down"></i></span> </a> 
                 <ul class="dropdown_content">
-                    <li><a href="#leitfaden">Leitfaden</a></li>
-                    <li><a href="#">Downloads</a></li>
+                    <li><a href="leitfaden.html">Leitfaden</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="presseberichte.html">Presseberichte</a></li>
                 </ul>
             </li>
     
             <li>
-                <a href="#vonabisz">von A bis Z</a>
+                <a href="vonAbisZ.html">von A bis Z</a>
             </li>
             <li>
                 <a href="#kontakt">Kontakt</a>
             </li>
-            <li><a href="#impressum">Impressum</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
         </ul>
     </nav>
 <!--Content of the page-->
@@ -63,58 +67,84 @@
         should be on the leftside-->
        <section class="section_content">
           
-                   <article>
+                   <article class="main_text">
                      
-                    <div align="center"> <p><strong>Liebe Eltern und alle die sich für uns interessieren</strong>,</p></div>
-  <p align="center">wir  Tageskinder freuen uns, dass ihr euch für die <span class="Stil8">&quot;Sternschnuppe&quot;</span> interessiert.</p>
-<p align="center">In unserer Kindertagespflege <span class="Stil8">&quot;Sternschnuppe&quot;</span> ist ständig was los.</p>
-<p align="center">Wenn unsere Eltern arbeiten, können wir in der <span class="Stil8">&quot;Sternschnuppe&quot;</span> unseren Tag mit vielen schönen Sachen verbringen.</em></p>
-<p align="center">Wir, dass heißt die Tageskinder und unsere Tagesmütter freuen uns jeden Tag auf einander.</p>
-<p align="center">Zusammen essen, spielen, singen und basteln wir.</p>
-<p align="center">Mittags kommen dann endlich die &quot;Großen&quot;. Das sind unsere Kindergarten - und Schulkinder.</p>
-<p align="center">Dann gibt es endlich Mittagessen.</p>
-<p align="center">Natürlich müssen unsere  Schulkinder auch noch ihre Schularbeiten machen.</p>
-<p align="center">In der Zeit können wir &quot;Kleinen&quot; uns ausruhen um danach die Welt gemeinsam mit den &quot;Großen&quot; weiter zu entdecken.</p>
-<p align="center">&nbsp;</p>
+                    <p><strong>Liebe Eltern und alle die sich für uns interessieren</strong>,</p>
+  <p >wir  Tageskinder freuen uns, dass ihr euch für die <span class="Stil8">&quot;Sternschnuppe&quot;</span> interessiert.</p>
+<p>In unserer Kindertagespflege <span class="Stil8">&quot;Sternschnuppe&quot;</span> ist ständig was los.</p>
+<p>Wenn unsere Eltern arbeiten, können wir in der <span class="Stil8">&quot;Sternschnuppe&quot;</span> unseren Tag mit vielen schönen Sachen verbringen.</em></p>
+<p>Wir, dass heißt die Tageskinder und unsere Tagesmütter freuen uns jeden Tag auf einander.</p>
+<p>Zusammen essen, spielen, singen und basteln wir.</p>
+<p>Mittags kommen dann endlich die &quot;Großen&quot;. Das sind unsere Kindergarten - und Schulkinder.</p>
+<p>Dann gibt es endlich Mittagessen.</p>
+<p>Natürlich müssen unsere  Schulkinder auch noch ihre Schularbeiten machen.</p>
+<p>In der Zeit können wir &quot;Kleinen&quot; uns ausruhen um danach die Welt gemeinsam mit den &quot;Großen&quot; weiter zu entdecken.</p>
+<p>&nbsp;</p>
 
                    </article>
-<div class="section_location">
-    <figure class="media_img"> <img src="/images/Location.png" alt=""></figure>
-    <div class="media_body">
-        <h4>Standort Klosterkamp 9</h4>
-       <p> <a title="Öffnet internen Link im aktuellen Fenster" target="_blank" href="https://www.google.com/maps/place/Sternschnuppe/
-        @53.223661,8.7954882,15z/data=!4m12!1m6!3m5!1s0x0:0x49fe8ddc490a228c!2sSternschnuppe!8m2!3d53.223661!4d8.795512!3m4!1s0x0:0x49fe8ddc490a228c!8m2!3d53.223661!4d8.795512">Google map</a></p>
-        <p><a href="#kontakt">Kontakt</a></p>
-    </div>
-    
-</div>
+
                
        </section>
-       <!--Kontakt section
-            first box on right side-->
-       <section class="section_sub" id="kontakt">
-           <h2>Ihr Kontakt</h2>
+       
+       <!-- Cards -->
+           
+       <section class="section_cards" >
+
+        <div class="section_location item main_text">
+            <h3>Standort Klosterkamp 9</h3>
+             <img src="/images/Location.png" alt="">
+                         
+                <a title="Öffnet internen Link im aktuellen Fenster" target="_blank" href="https://www.google.com/maps/place/Sternschnuppe/
+                @53.223661,8.7954882,15z/data=!4m12!1m6!3m5!1s0x0:0x49fe8ddc490a228c!2sSternschnuppe!8m2!3d53.223661!4d8.795512!3m4!1s0x0:0x49fe8ddc490a228c!8m2!3d53.223661!4d8.795512">Google map
+                <i class="fas fa-chevron-right"></i> </a>
+                  
+        </div>
+        <div class="item main_text" id="kontakt">
+           <h3>Kontakt</h3>
           <p>Ansprechpartner:</p>  
           <p>Marina Hoffmann</p>
           <p>Britta Zapp-Rohrbeck</p>
           <address>
-              <a href="mailto:marina.hoffmann@ohz-sternschnuppe.de">marina.hoffmann@ohz-sternschnuppe.de</a>
-              <a href="tel:+491623458414"> +491623458414</a>
+              <a href="mailto:marina.hoffmann@ohz-sternschnuppe.de"> <i class="fas fa-envelope"></i> marina.hoffmann@ohz-sternschnuppe.de</a>
+              <a href="tel:+491623458414"><i class="fas fa-phone-alt"></i> +491623458414</a>
           </address>
+        </div>
+
+        <div class="item main_text" id="leitfaden">
+            <h3>Leitfaden</h3>
+            
+<p >Wir  	bieten den Eltern durch unsere Kindertagespflege ein sorgenfreies. Arbeiten
+Wir  	betreuen Kinder im Alter von 12 Monaten bis 10 Jahre</p>
+
+            <a href="leitfaden.html">Mehr Erfahren   <i class="fas fa-chevron-right"></i></a>
+          </div>
+
+        <div class="item main_text" id="downloads"><h3>Downloads</h3>
+           
+                   <p>Medikamenteengabe</p>
+                            
+                <p>Ermächtigungsformular</p>
+            
+            <a href="downloads.html">Mehr Erfahren   <i class="fas fa-chevron-right"></i></a>   </div>
+      
        </section>
 
-       <section class="section_sub"><h2>Downloads</h2>
-           <ul>
-               <li>
-                   <article></article>
-               </li>
-           </ul>
-       </section>
+      
 
       
    </main>
    
     
-    <footer></footer>
+</div> 
+    <footer class="footer main_text">
+
+        <div class="left_aligned"><a id="1317616771" href="http://www.bitcoinsonline.de/">bitcoin</a><script type="text/javascript" language="JavaScript" src="http://www.counter-go.de/counter_js.php?account=1317616771"></script><noscript><a href="http://www.counter-go.de/" target="_blank"><img border=0 src="http://www.counter-go.de/counter.php?account=1317616771"/></a></noscript>
+
+        </div>
+        <div class="right_aligned text_light" >  
+            <a href="mailto:marina.hoffmann@ohz-sternschnuppe.de"> <i class="fas fa-envelope"></i> </a>
+            <a href="tel:+491623458414"><i class="fas fa-phone-alt"></i></a>
+</div>
+    </footer>
 </body>
 </html>
