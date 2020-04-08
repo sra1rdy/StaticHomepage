@@ -11,35 +11,39 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-    <!-- <script src="https://kit.fontawesome.com/b99e675b6e.js"></script> -->
+    
 </head>
 <body>
     <!--Header-->
-    <!--make consistent class names-->
-   <div class="container">
+    
+     <div class="container">
 
    
-    <header class="page-header">
-        <a href="index.html">
-
-            <h1 class="header_text">Sternschnuppe</h1>
-            <p class="header_subtext">kindertagespflege in Osterholz-scharmbeck</p>
-        </a>
-        <a href="index.html" class="stern-logo"><img src="/images/Logo.gif" alt="logo" width="250" height="150">  </a>
-   
-<!--logo-->
-    </header>
-
-    <nav class="sidebar">
-        <ul >
+      <header class="page-header">
+        <a class="menu-btn" id="menuBtn" onclick="toggleClass()" >
+          <i class="fas fa-bars fa-2x"></i>
+     </a>
+          <a href="index.html">
+  
+              <h1 class="header_text">Sternschnuppe</h1>
+              <p class="header_subtext">kindertagespflege in Osterholz-scharmbeck</p>
+          </a>
+              <a href="index.html" class="stern_logo"><img src="/images/Logo.gif" alt="logo" width="250" height="150">  </a>
+     
+  <!--logo-->
+      </header>
+  
+      <nav class="sidebar main-nav">
+          <ul class="main-menu">
             <li>
-                <a href="#">Hauptseite</a>
+                <a href="index.html">Hauptseite</a>
             </li>
             <li>
                 <a href="#ueberuns">über uns<span><i class="fa fa-caret-down"></i></span> </a> 
                 <ul class="dropdown_content">
                     <li><a href="leitfaden.html">Leitfaden</a></li>
                     <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="presseberichte.html">Presseberichte</a></li>
                 </ul>
             </li>
     
@@ -54,15 +58,14 @@
 
    <main class="main_container">
 
-         <!--Navigation-->
+         
         
     <section class="section_heading">
 
         <h2><span class="header_text">"von A bis Z"</span></h2>
-<!--Might add a background image here-->
+
     </section>
-    <!--Info Section
-        should be on the leftside-->
+   
        <section>
           
                    <article>
@@ -468,10 +471,17 @@
         <div class="left_aligned"><a id="1317616771" href="http://www.bitcoinsonline.de/">bitcoin</a><script type="text/javascript" language="JavaScript" src="http://www.counter-go.de/counter_js.php?account=1317616771"></script><noscript><a href="http://www.counter-go.de/" target="_blank"><img border=0 src="http://www.counter-go.de/counter.php?account=1317616771"/></a></noscript>
 
         </div>
-        <div class="right_aligned text_light">  
+        <div class="right_aligned text_light" id="kontakt">  
             <a href="mailto:marina.hoffmann@ohz-sternschnuppe.de"> <i class="fas fa-envelope"></i> </a>
             <a href="tel:+491623458414"><i class="fas fa-phone-alt"></i></a>
 </div>
     </footer>
+    <script>
+      function toggleClass(){
+      const elMenu = document.getElementById('mainMenu');
+   
+     elMenu.classList.toggle('show');
+  }
+  </script>
 </body>
 </html>

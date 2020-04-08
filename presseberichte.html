@@ -12,28 +12,27 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-    <!-- <script src="https://kit.fontawesome.com/b99e675b6e.js"></script> -->
 </head>
 <body>
-    <!--Header-->
-    <!--make consistent class names-->
-   <div class="container">
-
-   
-    <header class="page-header">
-        <a href="index.html">
-
-            <h1 class="header_text">Sternschnuppe</h1>
-            <p class="header_subtext">kindertagespflege in Osterholz-scharmbeck</p>
-        </a>
+    <div class="container">
         
-        <a href="index.html" class="stern-logo"><img src="/images/Logo.gif" alt="logo" width="250" height="150">  </a>
+        <!--Header-->
    
-<!--logo-->
-    </header>
-
-    <nav class="sidebar">
-        <ul >
+        <header class="page-header">
+            <a class="menu-btn" id="menuBtn" onclick="toggleClass()" >
+                <i class="fas fa-bars fa-2x"></i>
+           </a>
+            <a href="index.html">
+    
+                <h1 class="header_text">Sternschnuppe</h1>
+                <p class="header_subtext">kindertagespflege in Osterholz-scharmbeck</p>
+            </a>
+                <a href="index.html" class="stern_logo"><img src="/images/Logo.gif" alt="logo" width="250" height="150">  </a>
+       
+        </header>
+    
+        <nav class="sidebar main-nav">
+            <ul class="main-menu">
             <li>
                 <a href="/">Hauptseite</a>
             </li>
@@ -61,7 +60,6 @@
     <section class="section_heading">
 
         <h2><span class="header_text">"Sternschnuppe Presseberichte"</span></h2>
-<!--Might add a background image here-->
     </section>
 
   <section class="section_content">
@@ -106,5 +104,12 @@
             <a href="tel:+491623458414"><i class="fas fa-phone-alt"></i></a>
         </div>
     </footer>
+    <script>
+        function toggleClass(){
+        const elMenu = document.getElementById('mainMenu');
+     
+       elMenu.classList.toggle('show');
+    }
+    </script>
 </body>
 </html>

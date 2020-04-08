@@ -12,7 +12,6 @@ body{
   background: var(--bg_light);
   color: black;
  
-  /* line-height: 1.5; */
  
 }
 .container {
@@ -20,7 +19,6 @@ body{
   max-width: 1900px;
   margin: auto;
   min-height: calc(100vh - 58px);
-  /* min-height: calc(100vh - 153px - 58px); */
 }
 .text_light{
   color: #777;
@@ -35,11 +33,12 @@ body{
 .page-header {
 
     overflow: hidden; 
-    display: flex; align-items: center; justify-content: space-between; flex-direction: row; /**flex**/
-    /* position: relative;             */
-    
-    /* background: #ccc; */
-    box-shadow: var(--bg_light);
+    display: flex;
+     align-items: center; 
+     justify-content: space-between; 
+     flex-direction: row; /**flex**/
+      box-shadow: var(--bg_light);
+    z-index: 10;
   
 }
 
@@ -47,21 +46,35 @@ body{
     color: var(--primary);
 }
 
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+}
+
 .header_subtext{
 color: var(--sub_text_color);
+}
+
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  z-index: 2;
+  display: none;
 }
 /*********************navigation-sidebar-desktop************************/
 nav.sidebar{
     width: 200px;
     height: 100%;
-    /* background:var(--bg_light); */
     padding: 30px 0px;
     position: fixed;
     z-index: 10;
   }
   .sidebar ul li{
     padding: 12px;
-/* border-bottom: 1px solid #bdb8d7; */
     border-bottom: 1px solid rgba(0,0,0,0.05);
     border-top: 1px solid rgba(255,255,255,0.05);
     list-style: none;
@@ -70,11 +83,10 @@ nav.sidebar{
  
   
     ul li a{
-    /* color: #bdb8d7; */
+   
     display: block;
     text-decoration: none;
     font-size: 1rem;
-    /* color: var(--sub_text_color); */
     color: #777;
     min-height: calc(100vh - 211px -58px);
 
@@ -90,9 +102,6 @@ nav.sidebar{
   }
 
   
-  /* nav .sidebar ul li a .fas{
-    width: 25px;
-  } */
   
   .sidebar ul li:hover{
     background-color: var(--bg_main);
@@ -103,7 +112,6 @@ nav.sidebar{
 
   /********************dropdown in sidebar*********************/
   ul li .dropdown_content {
-    /* width: 100%; */
     display: none;
   }
  ul li:hover .dropdown_content{
@@ -123,7 +131,6 @@ nav.sidebar{
   .Stil3 {
     color: var(--primary);
     font-size: 120%;
-    /* font-style: italic; */
   }
   .Stil6 {
     font-size: x-large;
@@ -137,13 +144,11 @@ nav.sidebar{
   }
   .Stil9 {
     font-size: xx-large;
-    /* font-style: italic; */
   }
   .Stil10 {font-size: small}
 
   
-      
-       
+          
       
        
 
@@ -162,7 +167,6 @@ nav.sidebar{
     .section_heading h2{
       font-size: 2.5rem ;
       font-weight: lighter;
-      /* font-style: italic; */
       color: var(--sub_text_color);
       text-align: center;
       
@@ -171,12 +175,9 @@ nav.sidebar{
 
   .section_content{
       border-radius: 10px;
-     /* background: #fff; */
-      /* border: 2px groove rgba(252, 252, 252, 0.438); */
       box-shadow: --shadow;
       box-sizing: border-box;
       margin-bottom: 10px;
-      /* padding-top: 10px; */
       text-align: center;
 
   }
@@ -227,7 +228,7 @@ nav.sidebar{
 }
 
 .section_cards a{
-  display: inline-block;
+  display: block;
   padding-top: 10px;
   color: #0067b8;
   font-weight: lighter;
@@ -242,13 +243,19 @@ nav.sidebar{
   list-style: none;
 }
 
+.section_cards .item_download .btn{
+line-height: 1.5;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
 
 
 /*****************footer******************/
 
 .footer{
   position: absolute;
-  background: #bbbbbb;;
+  background: #bbb;
   height: 58px;
   width: 100%;
   justify-content: space-around;
@@ -312,4 +319,84 @@ align-items: right;
 .Stil24 {color: var(--primary)}
 .Stil25 {font-size: large; color: var(--primary);}
 
+  /******************** Responsive for small screens ******************************/
+
+
   
+
+  @media(max-width: 976px){
+  
+    .menu-btn {
+      display: block;
+      text-align: center;
+    }
+  
+    .menu-btn:hover {
+      opacity: 0.5;
+    }
+
+    .stern_logo {
+      margin-right: 50px;
+      background-size: 80px;
+    }
+
+    /* nav .sidebar {
+      display: none;
+    } */
+
+   
+  .main-nav ul.main-menu {
+      display: block;
+      position: absolute;
+      top:0;
+      left: 0;
+      background: #f2f2f2;
+      width: 50%;
+      height: 90%;
+      border-right: #ccc 1px solid;
+      opacity: 0.9;
+      padding: 30px;
+      transform: translateX(-400px);
+      transition: transform 0.5s ease-in-out;
+    }
+
+     .show{
+      transform: translateX(-20px) !important;
+    }
+   
+
+    .main-nav ul.main-menu li {
+      padding: 10px;
+      border-bottom: #ccc solid 1px;
+      font-size: 14px;
+    }
+  
+    .main-nav ul.main-menu li:last-child {
+      border-bottom: 0;
+    }
+  
+    
+    .main_container {
+      margin-left: 0px;
+    }
+    .section_cards{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+
+  @media(max-width: 586px) {
+   
+       .stern_logo{
+      display: none;
+    }
+.section_cards {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+  
+.footer{
+  flex-wrap: wrap;
+}
+}
