@@ -33,20 +33,20 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-direction: row; /**flex**/
-  box-shadow: var(--bg_light);
-  z-index: 10;
+  /* box-shadow: var(--bg_light); */
+  background: #f1f1f1;
+  z-index: 100;
 }
 
 .header_text {
   color: var(--primary);
 }
 
-.fixed-header {
-  position: fixed;
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
-}
+  }
 
 .header_subtext {
   color: var(--sub_text_color);
@@ -60,11 +60,7 @@ body {
   z-index: 2;
   display: none;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
+
 
 
 /*********************navigation-sidebar-desktop************************/
