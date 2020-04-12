@@ -33,13 +33,13 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-direction: row; /**flex**/
-  /* box-shadow: var(--bg_light); */
   background: #f1f1f1;
   z-index: 100;
 }
 
 .header_text {
   color: var(--primary);
+  font-family: 'curlz MT';
 }
 
 .sticky {
@@ -128,6 +128,7 @@ ul li ul .dropdown_content li {
 .Stil8 {
   color: var(--primary);
   font-weight: bold;
+  font-family: 'curlz MT';
 }
 .Stil9 {
   font-size: xx-large;
@@ -177,9 +178,12 @@ ul li ul .dropdown_content li {
 
 .section_cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   margin-bottom: 40px;
+  /* grid-auto-rows: minmax(min-content, max-content); */
+  align-items: center;
+  
 }
 .section_cards .item {
   background-color: var(--bg_light);
@@ -187,14 +191,22 @@ ul li ul .dropdown_content li {
   box-shadow: var(--shadow);
   padding: 2px 0 2px 2px;
   margin-bottom: 2px;
+  text-align: center;
+  width: 220px;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
 }
+
+
 
 .section_cards .item:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .section_cards img {
-  width: 100%;
+  /* width: 90; */
   margin-bottom: 10px;
 }
 
@@ -218,12 +230,13 @@ ul li ul .dropdown_content li {
   list-style: none;
 }
 
+/* 
 .section_cards .item_download .btn {
   line-height: 1.5;
   min-height: 2rem;
   margin-bottom: 20px;
   margin-top: 20px;
-}
+} */
 
 /*****************footer******************/
 
@@ -249,6 +262,7 @@ ul li ul .dropdown_content li {
 
 .footer .left_aligned {
   align-items: left;
+  
 }
 
 .footer .right_aligned {
@@ -336,8 +350,8 @@ ul li ul .dropdown_content li {
     opacity: 0.5;
   }
 
-  .stern_logo {
-    margin-right: 50px;
+  .stern_logo{
+    margin-right: 5em;
     background-size: 80px;
   }
 
@@ -364,6 +378,7 @@ ul li ul .dropdown_content li {
     transform: translateX(-20px) !important;
   }
 
+  
   .main-nav ul.main-menu li {
     padding: 10px;
     border-bottom: #ccc solid 1px;
@@ -388,9 +403,11 @@ ul li ul .dropdown_content li {
   }
   .section_cards {
     grid-template-columns: repeat(1, 1fr);
+       
   }
 
   .footer {
     flex-wrap: wrap;
+    flex-direction: column;
   }
 }
