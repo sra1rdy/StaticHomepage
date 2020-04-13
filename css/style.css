@@ -24,6 +24,7 @@ body {
 .btn {
   border-radius: 10px;
   line-height: 2rem;
+  cursor: pointer;
 }
 /**********************header**************************************/
 
@@ -238,6 +239,36 @@ ul li ul .dropdown_content li {
   margin-bottom: 20px;
   margin-top: 20px;
 } */
+
+/*********************************cookie consent policy******************/
+.cookie_consent{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+   background: #2f3640;
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+  transform: translateY(1px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.cookie_consent p {
+  margin-right: 15px;
+}
+.cookie_consent a {
+  color: beige;
+  text-decoration: underline;
+}
+
+.cookie_consent.active {
+  
+  transform: translateY(200px);
+}
+
+
+
 
 /*****************footer******************/
 
