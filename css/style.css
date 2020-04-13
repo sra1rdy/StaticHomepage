@@ -97,6 +97,7 @@ ul li a .fa-caret-down {
 .sidebar ul li:hover {
   background-color: var(--bg_main);
   width: 100%;
+  overflow: hidden;
 }
 
 /********************dropdown in sidebar*********************/
