@@ -23,7 +23,7 @@
 
    
     <header class="page-header sticky">
-        <a class="menu-btn" id="menuBtn" onclick="toggleClass()" >
+        <a class="menu-btn" id="menuBtn"  >
              <i class="fas fa-bars fa-2x"></i>
         </a>
         <a href="#">
@@ -133,11 +133,7 @@
   
     
 </div> 
-<div class="cookie_consent" id="cookieConsent">
-    <p>Diese Webseite verwendet Cookies, um bestimmte Funktionen zu ermöglichen und das Angebot zu optimieren.
-    Indem Sie hier fortfahren, stimmen Sie der Nutzung von Cookies zu. <a href="#">Mehr Informationen</a></p>
-    <button class="btn"> Einverstanden!</button>
-       </div>    
+ 
 
 
     <footer class="footer main_text">
@@ -151,14 +147,14 @@
             <a href="tel:+491623458414"><i class="fas fa-phone-alt"></i></a>
 </div>
     </footer>
+    <div class="cookie_consent" id="cookieConsent">
+        <p>Diese Webseite verwendet Cookies, um bestimmte Funktionen zu ermöglichen und das Angebot zu optimieren.
+        Indem Sie hier fortfahren, stimmen Sie der Nutzung von Cookies zu. <a href="#">Mehr Informationen</a></p>
+        <button class="btn" id="cookieBtn"> Einverstanden!</button>
+           </div>   
 
-<script>
-    function toggleClass(){
-    const elMenu = document.getElementById('mainMenu');
- 
-   elMenu.classList.toggle('show');
-}
-</script>
+
+<script src="js/main.js" defer></script>
 
 
 

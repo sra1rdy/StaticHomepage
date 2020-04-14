@@ -250,8 +250,11 @@ ul li ul .dropdown_content li {
   color: #f5f6fa;
   padding: 0 32px;
   box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
-  transform: translateY(1px);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  width: 100%;
 }
 
 .cookie_consent p {
@@ -263,8 +266,7 @@ ul li ul .dropdown_content li {
 }
 
 .cookie_consent.active {
-  
-  transform: translateY(200px);
+  transform: translateY(500px);
 }
 
 
