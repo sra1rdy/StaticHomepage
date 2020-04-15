@@ -26,6 +26,7 @@ body {
   line-height: 2rem;
   cursor: pointer;
 }
+
 /**********************header**************************************/
 
 .page-header {
@@ -36,11 +37,12 @@ body {
   flex-direction: row; /**flex**/
   background: #f1f1f1;
   z-index: 100;
+  margin-top: 1rem;
 }
 
 .header_text {
   color: var(--primary);
-  font-family: 'curlz MT';
+  font-family: "Curlz MT", Curlz;
 }
 
 .sticky {
@@ -71,6 +73,7 @@ nav.sidebar {
   padding: 30px 0px;
   position: fixed;
   z-index: 10;
+ 
 }
 .sidebar ul li {
   padding: 12px;
@@ -240,6 +243,16 @@ ul li ul .dropdown_content li {
   margin-top: 20px;
 } */
 
+.section_date {
+align-items: center;
+display: flex;
+justify-content: center;
+
+}
+.section_date p{
+  color: #777;
+}
+
 /*********************************cookie consent policy******************/
 .cookie_consent{
   display: flex;
@@ -258,7 +271,7 @@ ul li ul .dropdown_content li {
 }
 
 .cookie_consent p {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .cookie_consent a {
   color: beige;
@@ -389,9 +402,9 @@ ul li ul .dropdown_content li {
     background-size: 80px;
   }
 
-  /* nav .sidebar {
+  nav .sidebar {
       display: none;
-    } */
+    }
 
   .main-nav ul.main-menu {
     display: block;
@@ -429,9 +442,22 @@ ul li ul .dropdown_content li {
   .section_cards {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .cookie_consent {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
 }
 
 @media (max-width: 586px) {
+ 
+
+header p.text_split{
+white-space: pre-line;
+}
+
+
   .stern_logo {
     display: none;
   }
@@ -443,5 +469,11 @@ ul li ul .dropdown_content li {
   .footer {
     flex-wrap: wrap;
     flex-direction: column;
+  }
+
+  .cookie_consent {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
   }
 }
