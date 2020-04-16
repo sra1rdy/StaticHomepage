@@ -27,6 +27,7 @@ body {
   cursor: pointer;
 }
 
+
 /**********************header**************************************/
 
 .page-header {
@@ -188,8 +189,7 @@ ul li ul .dropdown_content li {
   margin-bottom: 40px;
   /* grid-auto-rows: minmax(min-content, max-content); */
   align-items: center;
-  
-}
+ }
 .section_cards .item {
   background-color: var(--bg_light);
   border-radius: 10px;
@@ -274,7 +274,7 @@ justify-content: center;
   margin-right: 10px;
 }
 .cookie_consent a {
-  color: beige;
+  color: #f5f5dc;
   text-decoration: underline;
 }
 
@@ -402,7 +402,7 @@ justify-content: center;
     background-size: 80px;
   }
 
-  nav .sidebar {
+  nav.sidebar {
       display: none;
     }
 
